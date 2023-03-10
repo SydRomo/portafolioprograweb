@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    
+    <header>
+    
+            
+        <h2>TIENDA DE ROPA ONLINE</h2>
+
+    </header>
+    <style>
+        table
+        {
+            border-spacing: 2.5cm;
+        }
+        td
+        {
+            border-spacing: 3.5cm;
+        }
+        th
+        {
+            border-spacing: 10.5cm;
+        }
+
+
+
+    </style>
+
+
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+        <table>
+
+
+            <legend>Información del cliente</legend>
+
+        <tr>
+
+         <div>
+            
+            <td>  
+
+                <label for="usuario">Nombre de usuario:</label><br/>
+                <input type="text" name="usuario" id="usuario" maxlength="25" placeholder="Usuario"   title="Nombre de usuario"/><br/>
+            </td>
+           
+            <td> 
+                <label for="ap">Apellido paterno</label><br/>
+                <input type="text" name="ap" id="ap" maxlength="25" placeholder="Apellido paterno"/><br/>
+    
+            </td>
+          
+            <td>
+
+                <label for="am">Apellido materno</label><br/>
+                <input type="text" name="am" id="am" placeholder="Apellido materno"/><br/>
+
+            </td>
+        
+        </div>
+        </tr>
+        
+            <tr>
+            <td>
+                <label for="nombre">Nombre</label><br/>
+                <input type="text" name="nombre" id="nombre" maxlength="25" placeholder="Nombre"/><br/>
+            </td>
+
+            <td>
+
+                <br/> <label for="pass">Contraseña:</label><br/>
+                <input type="password" name="pass" id="pass" maxlength="15" required/><br/>
+
+            </td>
+
+        </tr>
+
+
+
+        </table>
+        </fieldset>
+    </form>
+</div>
+
+
+
+<form method="post" action="" enctype="text/plain">
+    <fieldset>
+    <table>
+
+
+        <legend>Datos de facturación</legend>
+
+    
+
+     <div>
+    <tr>
+        <td>
+
+            <label for="col">Colonia</label><br/>
+            <input type="text" name="col" id="col" placeholder="Colonia"/><br/>
+
+        </td>
+       
+       
+        <td> 
+            <label for="num">Num</label><br/>
+            <input type="text" name="num" id="num" maxlength="25" placeholder="Numero Exterior"/><br/>
+
+        </td>
+        <td>  
+
+            <label for="calle">Calle:</label><br/>
+            <input type="text" name="calle" id="calle" maxlength="25" placeholder="Calle"   title="Colonia"/><br/>
+        </td>
+    </tr>
+    
+    
+        <tr>
+    
+
+        <td>
+            <label for="correo">E-mail</label><br/>
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico"><br/>
+        </td>
+
+        <td>
+
+           <label for="cp">Codigo Postal:</label><br/>
+            <input type="password" name="cp" id="pass"placeholder="C.P" maxlength="6" required/><br/>
+
+        </td>
+
+        <td>
+
+            <label for="rfc">RFC:</label><br/>
+             <input type="password" name="rfc" id="pass"placeholder="RFC" maxlength="10" required/><br/>
+ 
+         </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <label for="fechan">Fecha de la venta:</label>
+                <input type="date" name="fechan" id="fechan" placeholder="Fecha de la Venta"/><br/>
+    
+            </td>
+        </tr>
+
+       </div>
+
+
+
+
+    </table>
+    </fieldset>
+</form>
+</div>
+
+
+
+<form method="post" action="" enctype="text/plain">
+    <fieldset>
+    <table>
+
+
+        <legend>Datos del articulo adquirido</legend>
+
+    
+
+     <div>
+    <tr>
+        <td>
+
+           
+            <select size="5" multiple>
+            <optgroup label="Tipo">
+                <option value="1" selected>Vestido</option>
+                <option value="2">Falda</option>
+                <option value="3">Pantalón</option>
+                <option value="4">Playera</option>
+                <option value="5">Camisa</option>
+                
+            </optgroup> <br/>
+
+        </td>
+                
+          
+       
+        <td> 
+          
+            <p>Tallas</p>
+            <input type="radio" name="talla" id="talla" value="c"/>
+            <label for="for=talla">Chico</label><br/>
+
+            <input type="radio" name="talla" id="talla" value="m"/>
+            <label for="for=talla">Mediano</label><br/>
+
+            <input type="radio" name="talla" id="talla" value="g"/>
+            <label for="for=talla">Grande</label><br/>
+
+        </td>
+        <td>  
+
+            <label for="colores">Selecciona un color:</label><br/>
+            <input type="color" name="colores" id="colores"/><br/>
+            <br/>
+
+            <input type="submit" name="enviar" id="enviar" value="Enviar formulario"/>
+
+            <input type="reset" name="borrar" id="borrar" value="Borrar formulario"/>
+        </td>
+    </tr>
+    
+    
+    
+       
+
+
+
+    </table>
+    </fieldset>
+</form>
+</div>
+
+
+<footer>
+    <h5 align="right">&copy;Distribuidora de ropa en linea 2023.</h5>;
+  </footer>
+
+
+
+
+
+</body>
+</html>

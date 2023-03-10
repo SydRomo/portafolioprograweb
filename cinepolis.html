@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+    <link rel="icon" type="image/png" href="logocine.png"/>
+</head>
+<body background="cine2.jpg" style="background-repeat:no-repeat;background-size: 100%; background-attachment: fixed;">
+    <form method ="post" action=""
+    enctype="text/plain">
+    <fieldset>
+        <legend>
+            Información del Cliente
+        </legend>
+        <img src="logocine.png" style ="width: 100px; float:right"/>
+        <label for="usuario">
+             Nombre de Usuario
+        </label><br/>
+        <input type="text" name="usuario" id="usuario"
+         maxlength="12" placeholder="usuario" size="25" title="Nombre de usuario" /> <br/>
+         <label for="ap">Apellido Paterno</label><br/>
+         <input type ="text" name="ap" id="ap" maxlength="25"/><br/>
+         <label for="am">Apellido Materno</label><br/>
+         <input type ="text" name="am" id="am" maxlength="25"/><br/>
+         <label for="">Contraseña </label><br/>
+         <input type="password" name="pass" id="pass" maxlength="15" required/><br/>
+
+         <form method="post" action="" enctype="text/plain">
+            <fieldset>
+            <table>
+    
+    
+                <legend>Información del la Pelicula </legend>
+    
+            <tr>
+        <label for="pelicula">Seleccione la Pelicula que desea ver</label><br/>
+        
+             <select name="Peli">
+            <optgroup label="Peliculas Clasificación A">
+            <option selected></option>
+            <option>Demon Slayer</option>
+            <option>El Gato con Botas 2</option>
+            <option>Las Momias y el Anillo Perdido</option>
+            </optgroup>
+            <optgroup label="Peliculas clasificación B">
+            <option selected></option>
+            <option>Ant-Man</option>
+            <option>Scream 6</option>
+            <option>Creed III</option>
+            <option>Demoniaca</option>
+            <option>65: Al Borde de la Extinción</option>
+            </optgroup>
+            </select>
+            
+         <br/> <label for="hora">Hora de función</label><br/>
+        <input type="time" name="hora" id="hora"/><br/>
+        <hr size="3xp" noshade color="#000080"/>
+
+        </tr>
+        </table>
+        <label for="ap">Selecciona la cantidad de boletos</label><br/>
+        <label for="ap">Boletos Adulto</label><br/>
+        <input type ="text" name="BA" id="BA" maxlength="2"/><br/>
+        <label for="ap">Boletos Niños</label><br/>
+        <input type ="text" name="BN" id="BN" maxlength="2"/><br/>
+        <label for="ap">Boletos Adulto Mayor</label><br/>
+        <input type ="text" name="BAM" id="BAM" maxlength="2"/><br/>
+
+
+
+        <form method="post" action="" enctype="text/plain">
+            <fieldset>
+            <table>
+    
+    
+                <legend>Metodo de Pago </legend>
+    
+            <tr>
+
+
+
+        <h3>Selecciona tu forma de pago s</h3>
+        <input type="checkbox" name="forma1" id="forma1" value="tdc"/>
+        <label for="forma1">Tarjetas de crédito</label><br/>
+
+        <input type="checkbox" name="forma2" id="forma2" value="efe"/>
+        <label for="forma2">Efectivo</label><br/> 
+        
+        <input type="checkbox" name="forma3" id="forma3" value="tdd"/>
+        <label for="forma3">Tarjetas de débito</label><br/>
+
+        <label for="fechan">Fecha de vencimiento de tarjeta:</label>
+        <input type="date" name="fechan" id="fechan" placeholder="Fecha vencimiento"/><br/>
+       
+        <label for="pass">Ingrese su 4 digitos de la tarjeta</label><br/>
+        <input type="text" name="pass" id="pass" maxlength="4" required/><br/>
+       <label for="pass">Ingrese su Pin para confirmar identidad</label><br/>
+        <input type="password" name="pin" id="pin" maxlength="4" required/><br/>
+
+
+         <input type="submit" name="enviar" id="enviar" value="Aceptar"/><br/>
+
+         </tr>
+         </table>
+    </fieldset>
+    </form>
+
+
+    <footer>
+        <h5>CINEPOLIS &nbsp; San Luis Potosí &copy;2023;
+
+      </footer>
+</body>
+</html>
