@@ -1,0 +1,154 @@
+#encabezado1
+{
+    display:block;
+    
+    width: 100 px;
+    padding:5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(247, 231, 245);
+    border: 5pxpx solid rgb(123, 0, 255);
+    outline-style: solid;
+    outline-color: rgb(9, 231, 38);
+    outline-width:thin;
+
+
+
+}
+
+#encabezado2
+{
+    display:block;
+    
+    width: 100 px;
+    padding:5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(247, 231, 245);
+    border: 5pxpx solid rgb(123, 0, 255);
+    outline-style: solid;
+    outline-color: rgb(9, 231, 38);
+    outline-width:medium;
+
+
+}
+
+#encabezado3
+{
+    display:block;
+    
+    width: 100 px;
+    padding:5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(247, 231, 245);
+    border: 5pxpx solid rgb(123, 0, 255);
+    outline-style: solid;
+    outline-color: rgb(9, 231, 38);
+    outline-width:thick;
+
+
+}
+
+#encabezado4
+{
+    display:block;
+    
+    width: 100 px;
+    padding:5px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(247, 231, 245);
+    border: 5pxpx solid rgb(123, 0, 255);
+    outline-style: solid;
+    outline-color: rgb(9, 231, 38);
+    outline-width:4px;
+
+
+
+}
+
+#encabezado5
+{
+    display:block;
+    width: 100 px;
+    padding:5px;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: rgb(0, 42, 255);
+}
+
+#encabezado6
+{
+    display:block;
+    width: 100 px;
+    padding:5px;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid black;
+    outline-style: dotted;
+    outline-color: rgb(255, 0, 166);
+}
+
+#encabezado7
+{
+    display:block;
+    width: 100 px;
+    padding:5px;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+
+#encabezado8
+{
+    text-align: center;
+    margin: 30px;
+    border: 1px solid rgb(8, 250, 113);
+    outline: 1px solid rgb(24, 0, 112);
+    outline-offset: 15px;
+}
+
+#cabecera
+{
+    background-color: rgb(194, 236, 130);
+    border: 1px solid rgb(229, 233, 222);
+    padding: 20px;
+}
+
+#menu
+{
+    background: rgb(205, 238, 234);
+    padding:5px 15px;
+
+}
+
+#menu li
+{
+    display:inline-block;
+    list-style: none;
+    padding:5px;
+    font:bold 14px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cabecera
+{
+    background-color: rgb(194, 236, 130);
+    border: 1px solid rgb(229, 233, 222);
+    padding: 20px;
+}
+
+
+#agrupar
+{
+    width: 960px;
+    margin:15px auto;
+    text-align: left;
+    background-color: rgb(247, 252, 184);
+
+}
+
