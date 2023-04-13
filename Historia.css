@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: "Texto";
+    src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+h3
+{
+    background-color: black;
+    font-family:'Texto',cursive;
+    font-size:25px;
+    color:rgb(255, 255, 255);
+}
+
+
