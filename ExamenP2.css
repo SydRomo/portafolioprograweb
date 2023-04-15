@@ -1,0 +1,98 @@
+*
+{
+    list-style: none;
+}
+
+.nav li a:hover
+{
+    font-family:'Fuente1' ;
+    list-style: none;
+    background-color: rgba(255, 133, 243, 0.621);
+    border:1px solid rgba(250, 190, 255, 0.279);
+    text-align: center;
+}
+
+.nav li ul 
+{
+    font-family:'Fuente1' ;
+    list-style: none;
+    display:none;
+    position:absolute;
+    min-width: 140px;
+}
+
+.nav li:hover >ul
+{
+    font-family:'Fuente1' ;
+    list-style: none;
+    display:block;
+    background-color: rgba(200, 153, 244, 0.33);
+    width: 500 px;
+    padding:20px;
+    border:1px solid rgb(56, 22, 135);
+    text-align: center;
+
+}
+
+.nav li ul li
+{
+    font-family:'Fuente1' ;
+    list-style: none;
+    position: relative;
+}
+
+.nav li ul li ul
+{
+    font-family:'Fuente1' ;
+    list-style: none;
+    right:-1050px;
+   
+}
+
+#Servicios
+{
+    font-family:'Fuente1' ;
+    text-align: center;
+    background: rgb(54, 128, 218);
+    border:1px solid rgba(68, 77, 247, 0.514);
+}
+
+
+a
+{
+    font-family:'Fuente1' ;
+    list-style: none;
+    display:block;
+    background-color: rgb(200, 153, 244);
+    width: 200px;
+    padding:10px;
+   
+    border:1px solid rgba(247, 68, 208, 0.514);
+    text-align: center;
+    background: rgba(255, 169, 183, 0.593);
+}
+
+#TituloP
+{
+    position:absolute;
+    left: 1050px;
+    top:25px;
+    border-radius: 15px;
+    border:3px solid rgb(74, 140, 255);
+    background-color: rgb(88, 99, 248);
+    font-size:200%;
+    font-family:'Fuente2' ;
+    border-radius: 10px;
+    
+}
+
+@font-face {
+    font-family: "Fuente1";
+    src: url(Patrick_Hand/PatrickHand-Regular.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "Fuente2";
+    src: url(Kaushan_Script/KaushanScript-Regular.ttf) format("truetype");
+}
