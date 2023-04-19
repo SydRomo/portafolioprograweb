@@ -1,0 +1,31 @@
+div
+{
+    text-align:center;
+    
+}
+
+@font-face {
+    font-family: "Titulo1";
+    src: url(Delicious_Handrawn/DeliciousHandrawn-Regular.ttf) format("truetype");
+}
+
+input
+{
+    border-radius: 30%;
+    display:block;
+    width: 200 px;
+    padding:30px;
+    border:1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(191, 244, 248);.
+   
+}
+
+h3
+{
+    font-family:'Titulo1';
+    font-size:50px;
+    color:rgb(232, 148, 235);
+}
+
