@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+    <link rel="stylesheet" href="P2P3.css">
+    <script src="P2P3.js"></script>
+</head>
+<body background="fondomol.png" style="background-repeat:no-repeat;background-size: 150%; background-attachment: fixed;">
+    <h1>Operaciones matemáticas</h1>
+    <h3>Escribe un número</h3>
+    <form method="post" action="">
+        <input type="text" id="num1" name="num1"/>
+    </form>
+    <h3>Escribe otro número</h3>
+    <form method="post" action="">
+        <input type="text" id="num2" name="num2"/>
+    </form>
+    <div>
+        <form method="post" enctype="text/plain">
+            <input type="button" name="sumar" value="Suma" onclick="suma()"/>
+            <input type="button" name="restar" value="Resta" onclick="resta()"/>
+            <input type="button" name="multiplicar" value="Multiplicar" onclick="multiplica()"/>
+            <input type="button" name="dividir" value="Dividir" onclick="divide()"/>
+        </form>
+    </div>
+    <h2>El resultado es:</h2>
+    <p id="resul" name="resul"></p>
+
+</body>
+</html>

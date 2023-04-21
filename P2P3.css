@@ -1,0 +1,20 @@
+h1
+{
+    font-family: 'Titulo', cursive;
+    background-color: aliceblue;
+    font-size:25px;
+    color:rgb(14, 154, 7);
+}
+
+@font-face {
+    font-family: "Titulo";
+    src: url(Delicious_Handrawn/DeliciousHandrawn-Regular.ttf) format("truetype");
+}
+
+#resul
+{
+    font-family: 'Titulo', cursive;
+    background-color: aliceblue;
+    font-size:25px;
+    color:rgb(14, 154, 7);
+}
