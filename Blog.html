@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" type="image/jpg" href="https://www.upslp.edu.mx/Reinscripcion/Promedio/_img/logo.png"/>
+    <script src="blog.js"></script>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body bgcolor="lightblue">
+    <center>
+        <img src="Blog.png" width="1300" height="400">
+    </center>
+    <table>
+        <th>
+            <td><h2>En este apartado puedes dar a conocer tus comentarios y sugerencias acerca de nuestra página y los libros que ofrece</h2>
+            <img src="blog2.png" type="img/png"/></td>
+        </th>
+        <th>
+            <td>
+                <section id="cajaformulario">
+                    <form name="formulario">
+                        <p>Dudas:<br><input type="text" name="clave" id="clave"></p>
+                        <p>Comentarios o sugerencias:<br><textarea name="text" id="texto"></textarea></p>
+                    </form>
+                </section>
+            </td>
+        </th>
+        <th>
+            <td>
+                <section id="cajaformulario">
+                    <form>
+                        <p><input type="button" name="guardar" id="guardar" value="Guardar"></p>
+                        <p><input type="button" name="eliminar" id="eliminar" value="Borrar datos" onclick="elimina()"></p>
+                    </form>
+                </section> 
+            </td>
+        </th>
+    </table>
+    <table>
+        <th>
+            <td>
+                <h2>También podrás compartir tus dudas para que puedan ser resultas o atendidas</h2>
+            </td>
+        </th>
+        <th>
+            <td>
+                <section id="cajadatos">
+                    Aún no registras información
+                </section>
+            </td>
+        </th>
+    </table>
+</body>
+</html>
