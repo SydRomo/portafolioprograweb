@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="ObtenerTotales.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+</head>
+<script>
+var total;
+// llamamos a la funcion "califica"
+function califica()
+
+// incializamos una variable llamada total es 0 que sevira como un contador
+    {var total=0;
+		//agregamos un for que mientas la variable x sea igual a 1 o menor o igual a 4 se ejecute lo de adentro
+    	for (var x=1;x<=4;x++)
+    	{
+			//nueva variable res, contador
+        var res=0;
+		// sumar variable r+ el numero en que se ejecute
+        var nom="r"+x;
+		//llamar la variable resul para llamar al documento
+        var resul=document.getElementsByName(nom);
+		//llamar a la varable var y condicionar que funcionara cuando el resultado tenga cierta funcion
+        for(var i=0;i<resul.length;i++)
+        {
+			//formar resul como arreglo con i, esto para saber si es verdadero, si este es verdadero res se evalua como entero o numero
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+		//aumentar total + re
+        total=total+res;
+		//llamar al html para transladar a funcion de javascript a este, con puntos obtenidos
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+		//condicionantes, si ell total es igual a 20 lanzara una alerta de excelente
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+			//condicionantes, si el total es igual a 15 lanzara una alerta de regular
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+			//condicionantes, si el total es igual a o menor a 15 lanzara una alerta de estudia un poco más
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+</script>
+<body background="honkai.jpeg" style="background-repeat:no-repeat;background-size: 150%; background-attachment: fixed;"><body>
+    <div id="contiene">
+	<h1 align="center">Responde la encuesta</h1>
+	<h2 align="center">Tu opinión es importante</h2>
+<form>
+<div>
+	
+	<ul align="center">
+
+		<h3>¿Como se llama el personaje que tiene una camara en el cuello?</h3>
+		<input type="radio" name="r1" id="r1" value="0"/>Hook<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Himeko<br/>
+		<input type="radio" name="r1" id="r1" value="5"/>7 de Marzo<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Bailu<br/>
+		<img src="ni.png" 
+		style="float:center;width:300px;height:300px;"/> 
+		
+		<h3>¿Como se llama el ayudante del tren expreso?</h3>
+		<input type="radio" name="r2" id="r2" value="0"/>Paimon<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Prain<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>Pom-Pom<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Pixie<br/>
+		<img src="clara.png" 
+		style="float:center;width:300px;height:300px;"/> 
+
+		
+		<h3>¿Personaje de cabello morado y lentes que crea a nuestrx protagonista?</h3>
+		<input type="radio" name="r3" id="r3" value="0"/>Silver Wolf<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Bronya<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Seele<br/>
+		<input type="radio" name="r3" id="r3" value="5"/>Kafka<br/>
+		<img src="march.png" alt="tori"
+		style="float:center;width:300px;height:300px;"/> 
+
+        <h3>Personaje que fue criada por un robot llamado Svarog</h3>
+		<input type="radio" name="r4" id="r4" value="0"/>Bailu<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Hook<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>Clara<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Herta<br/>
+		<img src="pom.png" alt="tori"
+		style="float:center;width:300px;height:300px;"/> 
+	</ul>
+	
+</div>
+
+<center><input type="button" value="Calificar" onclick="califica()"></center>
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<img src="bailu.png" alt="tori"
+style="float:center;width:500px;height:500px;"/> 
+<iframe frameborder="0" width="600" height="500"></iframe>
+
+</div>
+</body>
+</html>

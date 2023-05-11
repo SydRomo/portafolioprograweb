@@ -1,0 +1,66 @@
+h2
+{
+    display:block;
+    width: 500 px;
+    padding:20px;
+    border:1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(194, 188, 193);
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius:30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+
+    /*Color,desplazamiento hor,desp´vert,difuminacion */
+    /* Inset es para sombre interior*/
+   -moz-box-shadow: rgb(251, 253, 224) -10px 15px 5px ;
+   -webkit-box-shadow: rgb(247, 223, 204) -10px 15px 5px ;
+   box-shadow: rgb(255, 255, 165) -10px 15px 5px ;
+
+}
+
+h1,h2
+{
+    display:block;
+    background-color: rgb(250, 236, 199);
+    font:bold 14px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color:rgb(100, 80, 211);
+}
+
+ul
+{
+    background: rgba(252, 214, 236, 0.352);
+    border: 1px solid rgba(245, 250, 237, 0.323);
+    padding:20px;
+    margin-bottom: 15px;
+}
+li
+{
+    font:bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(86, 17, 92);
+    
+}
+
+input
+{
+    background: rgba(80, 186, 243, 0.989);
+    border: 1px solid rgba(114, 75, 244, 0.323);
+    padding:20px;
+    margin-bottom: 15px;
+}
+
+#total
+{
+    background: rgba(243, 80, 175, 0.989);
+    border: 1px solid rgba(251, 98, 151, 0.823);
+    padding:20px;
+    margin-bottom: 15px;
+}
+
+#comentario
+{
+    background: rgba(25, 160, 232, 0.989);
+    border: 1px solid rgba(114, 75, 244, 0.323);
+    padding:20px;
+    margin-bottom: 15px;
+}
