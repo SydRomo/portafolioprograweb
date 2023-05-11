@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Ejemplo de HTML5">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+
+
+
+
+ <script>
+            function inicia(){
+                var boton=document.getElementById('registrar');
+                boton.addEventListener('click', valores, false);
+                imprimir();
+            }
+
+            function valores(){
+                var matricula=document.getElementById('matri').value;
+                var nombre=document.getElementById('nombre').value;
+                localStorage.setItem(matricula,nombre);
+                imprimir();
+                document.getElementById('matri').value='';
+                document.getElementById('nombre').value='';
+            }
+
+            function imprimir(){
+                var registro=document.getElementById('registro');
+                registro.innerHTML='';
+                for(var i=0; i<localStorage.length; i++){
+                    var matricula=localStorage.key(i);
+                    var nombre=localStorage.getItem(matricula);
+                    registro.innerHTML+='#'+nombre+' '+matricula+'';
+                }
+            }
+            
+            window.addEventListener('load', inicia, false);
+
+            function borrar(){
+                if(confirm('¿Seguro?')){
+                    localStorage.clear();
+                    imprimir();
+                }
+            }
+
+
+
+            document.getElementById("my-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+            // Datos a enviar a través de la API Form
+            var data = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value
+            };
+
+            // Enviar la solicitud HTTP utilizando la biblioteca Fetch de JavaScript
+            fetch("https://api.example.com/form", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer your_api_key"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // Imprimir la respuesta de la API en la consola del navegador
+            })
+            .catch(error => {
+                console.error(error); // Manejar cualquier error de la solicitud HTTP
+            });
+        });
+
+
+        let w;
+
+function startWorker() {
+    if(typeof(w) == "undefined") {
+         w = new Worker("demo_workers.js");
+    }
+        w.onmessage = function(event) {
+        document.getElementById("result").innerHTML = event.data;
+        }   ;
+}
+
+function stopWorker() { 
+    w.terminate();
+    w = undefined;
+}
+
+
+function obtenerUbicacion ()
+        {
+            //verifica si el navegador del usuario soporta la API de geolocalizzacion web
+            if (navigator.geolocation)
+            {
+                //Si el navegador soporta la API de geolocalización web, obtiene la ubicación actuaal del usuario
+                navigator.geolocation.getCurrentPosition(function(posicion) {
+                    //Almacena la latitud y longuitid del usuario en variables
+                    var latitid=posicion.coords.latitude;
+                    var longitud=posicion.coord.longitude;
+                    alert ('Tu ubicacion actual es:'+latitud+','+longitud);
+                });
+            } else{
+                alert ('Tu navegador no soporta la Web Geolocation API');
+            }
+
+
+        }
+    </script>
+
+
+
+
+</script>
+<title>Título</title>
+<link rel="stylesheet" href="plantilla1.css">
+</head>
+<body background="https://png.pngtree.com/background/20211215/original/pngtree-cute-wallpapers-picture-image_1476275.jpg" style="background-repeat:no-repeat;background-size: 100%; background-attachment: fixed;backdrop-filter: blur(20px); " >
+<div id="agrupar">
+<header id="cabecera">
+<h1>API (HTML5)</h1>
+</header>
+<nav id="menu">
+<ul>
+<li><a href="ejemplo.html">Implementación de la API</a></li>     
+<li><a href="ejemplo.html">Explicación de la API</a></li>
+<li><a href="ejemplo.html">Importancia de la API</a></li>
+<li><a href="ejemplo.html">Explicación de la API</a></li>
+<li><button onclick="history.back()">Go Back</button></li>
+<li><button onclick="history.forward()">Go Forward</button></li>
+<li><button onclick="history.go(-2)">Go 2 pages back</button></li>
+</ul>
+</nav>
+<section id="seccion">
+<article>
+<header>
+<hgroup>
+<h1>Artículo principal</h1>
+<h2>Toda la información</h2>
+</hgroup>
+<p>La API Fetch proporciona una interfaz JavaScript para acceder y manipular partes del canal HTTP, 
+    tales como peticiones y respuestas. También provee un método global fetch() (en-US) que proporciona
+     una forma fácil y lógica de obtener recursos de forma asíncrona por la red.</p>
+
+</time>
+</header>
+API significa “interfaz de programación de aplicaciones”. En el contexto de las API, la palabra aplicación se refiere 
+a cualquier software con una función distinta. La interfaz puede considerarse como un contrato de servicio entre dos
+ aplicaciones. Este contrato define cómo se comunican entre sí mediante solicitudes y respuestas. La documentación de 
+ su API contiene información sobre cómo los desarrolladores deben estructurar esas solicitudes y respuestas.
+<figure>
+
+    <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_950,h_430/https://blog.finerioconnect.com/wp-content/uploads/2020/04/como-funciona-una-api.jpg"  style ="width: 500px; float:center"/></blockquote>
+          
+</figure>
+
+</article>
+<article>
+    <header>
+    <hgroup>
+    <h1>Concepto</h1>
+
+
+    </hgroup>
+
+
+  
+    <h1>Comentarios sobre el trabajo</h1>
+
+    <form id="my-form" action="" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Teléfono:</label>
+        <input type="text" id="phone" name="phone"><br>
+
+        <label for="califica">Califica el  trabajo</label>
+        <input type="range" min="1" max="10" value="7"/><br/>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+   
+  
+    </article>
+</section>
+
+
+<aside id="columna">
+    
+<blockquote>PRESENTACIONES API WEB</blockquote>
+<li><a href="presentacionstorage.html">API WEB STORAGE</a></li>
+<li><a href="presentacionforms.html">API FORMS</a></li>
+<li><a href="presentacionworker.html">API WEB WORKER</a></li>
+<li><a href="presentacionfetch.html">API FETCH</a></li>
+<li><a href="presentaciongeo.html">API GEOLOCATION</a></li>
+<li><a href="presentacionhistory.html">API HISTORY</a></li><br>
+<h2>JavaScript Web Workers API</h2>
+<br><br>
+<p>Contar numeros: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+</aside>
+
+<aside id="columna">
+    
+    <blockquote id="usuario">GENERADOR DE USUARIO</blockquote>
+
+    <section id="uno">
+        <form name="registro" method="post" enctype="text/plain">
+            <label for="nombre">
+                INGRESA TU MATRICULA
+            </label>
+            <br><br>
+            <input type="text" name="matricula" id="matri" placeholder="Write your No" maxlength="30">
+            <br><br>
+            <label for="ap">
+                INGRESA TU NOMBRE
+            </label>
+            <br><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu apellido" maxlength="30">
+            <br><br>
+            <input type="button" name="registrar" id="registrar" value="REGISTRAR USUARIO">
+            <br>
+            <br>
+            <textarea style="font-size: large;" name="text" id="registro"></textarea>
+            <br>   <br>
+            <input type="button" name="eliminar" id="eliminar" value="Borrar datos" onclick="borrar()">
+        </form>
+    </section>
+   
+<footer id="pie">
+    <button onclick="obtenerUbicacion()">Obtener ubicación</button>
+</footer>
+</div>
+</body>
+</html>
