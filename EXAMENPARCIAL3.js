@@ -1,22 +1,21 @@
-function decide(nuevo)
-{
-   
- 
-    var fechan=new Date();
- 
- 
-   
- 
-   var nuevo=new Date(nuevo);
- 
- 
-    if ((nuevo==fechan.getMonth()))
-    document.getElementById("comentario").innerHTML="ES EL MES DE TU CUMPLEAÑOS";
-else
-   
-    document.getElementById("comentario").innerHTML="NO ES EL MES DE TU CUMPLEAÑOS";
-
-}
-   
-     
-   
+function compararMes() {
+    var fecha = new Date(document.getElementById("fecha").value);
+    var mesIngresado = fecha.getMonth();
+  
+    var fechaActual = new Date();
+    var mesActual = fechaActual.getMonth();
+  
+    if (mesIngresado === mesActual) {
+      document.getElementById("resultado").textContent = "ES EL MES DE TU CUMPLEANOS";
+      
+  
+  
+    
+  
+  
+  
+    } else {
+      document.getElementById("resultado").textContent = "NO ES EL MES DE TU CUMPLENOS";
+    }
+  }
+  
